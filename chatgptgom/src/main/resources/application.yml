@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/chatgptgom?characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: qwer1234
+  devtools:
+    livereload:
+      enabled: true
+    freemarker:
+      cache: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true #show sql
+        format_sql: true #To beautify or pretty print the SQL
+        default_batch_fetch_size: 100
+
+logging.level:
+  org.hibernate.SQL: debug
+#  org.hibernate.type: trace
+
+openai:
+  api_key: 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
